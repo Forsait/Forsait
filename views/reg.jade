@@ -1,0 +1,6 @@
+extends layout
+block content
+  form(method='POST', action='/reg')
+    input(type='text', name='username', placeholder='Логин')
+    input(type='text', name='password', placeholder='Пароль')
+    input(type='submit', value='OK')

@@ -1,0 +1,24 @@
+#main {
+margin : 0 auto;
+width  : 550px;
+}
+      
+#thumbs {
+padding : 0;
+}
+      
+#thumbs > li {
+float : left;
+list-style-type : none;
+display : block;
+margin : 0 5px;
+cursor : pointer;
+}
+      
+.clearfix:after {
+content: "."; /* добавить содержимое: "." */
+display: block; /* сделать блоком, т.к. inline не может иметь clear */
+clear: both; /* с обеих сторон clear */
+visibility: hidden; /* сделать невидимым, зачем нам точка внизу? */
+height: 0; /* сделать высоту 0, чтобы не занимал место */
+}

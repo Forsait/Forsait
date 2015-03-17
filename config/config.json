@@ -1,0 +1,16 @@
+{
+"scripts":[""],
+"styles":["/Media/css/style.css"],
+"port":3000,
+"session":{"secret": "key"},
+"mongoose": {
+  "uri": "mongodb://localhost/kurs",
+  "options": {
+     "server": {
+      "socketOptions": {
+         "keepAlive": 1
+      }
+     }
+  }
+}
+}

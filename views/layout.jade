@@ -1,0 +1,82 @@
+doctype html
+html
+  head
+    title Овощной сайт!
+    meta(charset='utf-8')
+    meta(name='description', content='description')
+    meta(content='description')
+    for script in scripts 
+      script(src='#{script}', type='text/javascript')
+    for style in styles 
+      link(href='#{style}' rel='stylesheet', type='text/css')
+  body
+    .wrapper
+      header.header
+        a.logolink(href='index')
+          img.logo(src='/media/img/logo.png')
+        h1 Овощной сайт!
+        .menutop
+          a(href='/index') Главная
+          a(href='/green') Овощи
+          a(href='/salad') Салаты
+          a(href='/pyramid') Пирамида питания
+          a(href='/galery') Галерея
+          a(href='/reg') Регистрация
+          a(href='/cabinet') Кабинка
+          a(href='/logout') Exit  
+      article.main
+        block content
+      aside.aside.aside-1
+        a.leftmenu(href='l.green') Овощи
+        a.leftmenu(href='l.broccoli') Брокколи
+        a.leftmenu(href='l.cabbage') Капуста
+        a.leftmenu(href='l.lettuce') Салат-латук
+        a.leftmenu(href='l.spinach') Шпинат
+        a.leftmenu(href='l.cucumber') Огурец
+        a.leftmenu(href='l.pumpkin') Тыква
+        a.leftmenu(href='l.tomato') Помидор
+        a.leftmenu(href='l.onion') Лук
+        a.leftmenu(href='l.radish') Редька
+        a.leftmenu(href='l.beet') Свекла
+        a.leftmenu(href='l.carrot') Морковь
+        a.leftmenu(href='l.potato') Картофель
+        a.leftmenu(href='l.garlic') Чеснок
+        a.leftmenu(href='l.beans') Фасоль
+        a.leftmenu(href='l.eggplant') Баклажан
+        a.leftmenu(href='l.artichoke') Топинамбур
+        a.leftmenu(href='l.celery') Сельдерей
+      aside.aside.aside-2
+        table(width='100%', height='180', style='background-color:#f2f2f2; border: #cccccc 1px solid; font-family:Tahoma; font-size:12px; color:#000000; right:0;', cellpadding='2', cellspacing='0')
+          tr
+            td
+              a(href='http://6.pogoda.by/26850', style='font-family:Tahoma; font-size:12px; color:#003399;', title='Погода Минск на 6 дней - Гидрометцентр РБ', target='_blank') Погода Минск
+          tr
+            td
+              table(width='100%', height='100%', style='background-color:#f2f2f2; font-family:Tahoma; font-size:12px; color:#000000;', cellpadding='0', cellspacing='0')
+                tr
+                  td
+                    script(type='text/javascript', charset='windows-1251', src='http://pogoda.by/meteoinformer/js/26850_1.js')
+      footer.footer
+        .flogo
+          a(href='#') Интернет-портал твоего правильного питания
+          p Copyright @ 2015
+        .fmenu
+          ul
+            li
+              a(href='index') Главная
+            li
+              a(href='goods') Продукция
+            li
+              a(href='about_us') О нас
+            li
+              a(href='contact') Контакты
+            li
+              a(href='map') Карта сайта
+        .fphone
+          p Телефон:
+          p 8 (800) 700-00-01
+          p Режим работы:
+          p
+            | Будние дни: с 9-00 до 18-00
+            br
+            | Суббота, воскресенье-  выходные
